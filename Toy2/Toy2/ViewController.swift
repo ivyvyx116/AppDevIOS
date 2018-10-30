@@ -69,8 +69,14 @@ class ViewController: UIViewController {
         }
         
         if (Cat.count == 0) {
-            Cat.addCat(name: "Salt", image: #imageLiteral(resourceName: "FB176627C22DF461B2AF25EB0E70C1CA"), age: 1, type: "sweet")
-            Cat.addCat(name: "Pepper", image: #imageLiteral(resourceName: "69ADB2F66B50EDF4A73357EB2C96B18A"), age: 1, type: "sour")
+            Cat.loadCats{ (result) in
+                for dict in result {
+                    let imageURL = URL(string: dict["image"]!)
+                    let image = UIImage(data: try! Data(contentsOf: imageURL!))
+                    Cat.addCat(name: dict["name"]!, image: image, age: Int(dict["age"]!), type: dict["type"]!)
+            }
+            
         }
     }
+}
 }

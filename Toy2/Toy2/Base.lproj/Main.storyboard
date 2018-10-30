@@ -49,7 +49,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your info!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfT-Hf-0F3">
-                                <rect key="frame" x="50" y="348" width="274" height="21"/>
+                                <rect key="frame" x="50" y="406" width="274" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="TYV-Ag-LyB"/>
                                 </constraints>
@@ -57,16 +57,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rky-aH-wz6">
-                                <rect key="frame" x="127" y="435" width="122" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="4Bv-Ac-ZVk"/>
-                                </constraints>
-                                <state key="normal" title="Go to my cats..."/>
-                                <connections>
-                                    <segue destination="4X8-9d-rfB" kind="show" id="49I-bP-ONb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-Lj-zNR">
                                 <rect key="frame" x="150" y="308" width="74" height="43"/>
                                 <constraints>
@@ -76,6 +66,16 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="SubmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scD-gY-Dg9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rky-aH-wz6">
+                                <rect key="frame" x="127" y="461" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Bv-Ac-ZVk"/>
+                                </constraints>
+                                <state key="normal" title="Go to my cats..."/>
+                                <connections>
+                                    <segue destination="4X8-9d-rfB" kind="show" id="49I-bP-ONb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,17 +89,17 @@
                             <constraint firstItem="W8M-gK-TYO" firstAttribute="top" secondItem="FnS-RY-Emf" secondAttribute="bottom" constant="8" symbolic="YES" id="Nw4-i3-6us"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YfT-Hf-0F3" secondAttribute="trailing" constant="51" id="Oe9-Fg-XGr"/>
                             <constraint firstItem="lKp-CW-2Ef" firstAttribute="top" secondItem="UHF-cV-iIM" secondAttribute="bottom" constant="8" id="P4P-2P-mCe"/>
-                            <constraint firstItem="rky-aH-wz6" firstAttribute="top" secondItem="YfT-Hf-0F3" secondAttribute="bottom" constant="66" id="PZE-uK-C8K"/>
+                            <constraint firstItem="rky-aH-wz6" firstAttribute="top" secondItem="YfT-Hf-0F3" secondAttribute="bottom" constant="34" id="PZE-uK-C8K"/>
                             <constraint firstItem="UHF-cV-iIM" firstAttribute="leading" secondItem="lKp-CW-2Ef" secondAttribute="leading" id="Rc1-0K-AfL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lKp-CW-2Ef" secondAttribute="trailing" constant="41" id="SJF-t6-gfx"/>
                             <constraint firstItem="lKp-CW-2Ef" firstAttribute="trailing" secondItem="W8M-gK-TYO" secondAttribute="trailing" id="WxR-0N-yov"/>
                             <constraint firstItem="UHF-cV-iIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="Z6B-T4-cnU"/>
-                            <constraint firstItem="YfT-Hf-0F3" firstAttribute="top" secondItem="ufs-Lj-zNR" secondAttribute="bottom" constant="-3" id="bJq-mh-GsS"/>
+                            <constraint firstItem="YfT-Hf-0F3" firstAttribute="top" secondItem="ufs-Lj-zNR" secondAttribute="bottom" constant="55" id="bJq-mh-GsS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ufs-Lj-zNR" secondAttribute="trailing" constant="151" id="cXP-n9-FdJ"/>
                             <constraint firstItem="lKp-CW-2Ef" firstAttribute="top" secondItem="UHF-cV-iIM" secondAttribute="bottom" constant="8" symbolic="YES" id="fl9-os-gOt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W8M-gK-TYO" secondAttribute="trailing" constant="41" id="gTz-ve-2VE"/>
                             <constraint firstItem="UHF-cV-iIM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="jV7-nA-6ed"/>
-                            <constraint firstItem="YfT-Hf-0F3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="25" id="kwa-Lu-g9b"/>
+                            <constraint firstItem="YfT-Hf-0F3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="83" id="kwa-Lu-g9b"/>
                             <constraint firstItem="ufs-Lj-zNR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="rSx-p0-PL9"/>
                             <constraint firstItem="FnS-RY-Emf" firstAttribute="leading" secondItem="W8M-gK-TYO" secondAttribute="leading" id="ruZ-ex-a1O"/>
                             <constraint firstItem="FnS-RY-Emf" firstAttribute="top" secondItem="lKp-CW-2Ef" secondAttribute="bottom" constant="8" symbolic="YES" id="szT-9B-jrj"/>
