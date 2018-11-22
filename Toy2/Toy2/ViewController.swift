@@ -8,6 +8,17 @@
 
 import UIKit
 
+extension UIViewController {
+    func dismissKeyboardWhenTappingAround() {
+        let tap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dissmissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmissKeyboard() {
+        view.endEditing(false)
+    }
+}
+
 class ViewController: UIViewController {
     
     var submitted : Bool = false
@@ -58,7 +69,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        dismissKeyboardWhenTappingAround()
         if(UserDefaults.standard.object(forKey: "name") != nil) {
             let name = UserDefaults.standard.string(forKey: "name")
             let classYr = UserDefaults.standard.string(forKey: "class year")
@@ -73,7 +84,7 @@ class ViewController: UIViewController {
                 for dict in result {
                     let imageURL = URL(string: dict["image"]!)
                     let image = UIImage(data: try! Data(contentsOf: imageURL!))
-                    Cat.addCat(name: dict["name"]!, image: image, age: Int(dict["age"]!), type: dict["type"]!)
+                    Cat.addCat(name: dict["name"]!, image: image, age: dict["age"]!, type: dict["type"]!)
             }
             
         }

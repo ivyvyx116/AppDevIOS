@@ -90,7 +90,7 @@ class CatTableViewController: UITableViewController {
             let row = indexPath?.row
             
             DestVC.name = Cat.catArr[row!].name
-            DestVC.age = String(Cat.catArr[row!].age) + " year(s) old"
+            DestVC.age = Cat.catArr[row!].age + " year(s) old"
             DestVC.type = Cat.catArr[row!].type
             DestVC.image = Cat.catArr[row!].image
         }

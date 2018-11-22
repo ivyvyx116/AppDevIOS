@@ -14,6 +14,8 @@
 		00084E36216186FC00D0826E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00084E34216186FC00D0826E /* LaunchScreen.storyboard */; };
 		00084E41216186FC00D0826E /* Toy2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00084E40216186FC00D0826E /* Toy2Tests.swift */; };
 		00084E4C216186FC00D0826E /* Toy2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00084E4B216186FC00D0826E /* Toy2UITests.swift */; };
+		003462E421A0D33700AB5C30 /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003462E321A0D33700AB5C30 /* AddCatViewController.swift */; };
+		003462E621A0D38200AB5C30 /* AddCatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003462E521A0D38200AB5C30 /* AddCatTableViewCell.swift */; };
 		00AC7768217FA70C00BC2358 /* CatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC7767217FA70C00BC2358 /* CatTableViewController.swift */; };
 		00AC776A217FA7D300BC2358 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC7769217FA7D300BC2358 /* CatTableViewCell.swift */; };
 		00AC776E217FB15400BC2358 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC776D217FB15400BC2358 /* Cat.swift */; };
@@ -51,6 +53,8 @@
 		00084E47216186FC00D0826E /* Toy2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toy2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00084E4B216186FC00D0826E /* Toy2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy2UITests.swift; sourceTree = "<group>"; };
 		00084E4D216186FC00D0826E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003462E321A0D33700AB5C30 /* AddCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
+		003462E521A0D38200AB5C30 /* AddCatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatTableViewCell.swift; sourceTree = "<group>"; };
 		00AC7767217FA70C00BC2358 /* CatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewController.swift; sourceTree = "<group>"; };
 		00AC7769217FA7D300BC2358 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
 		00AC776D217FB15400BC2358 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				00AC7767217FA70C00BC2358 /* CatTableViewController.swift */,
 				00AC7769217FA7D300BC2358 /* CatTableViewCell.swift */,
 				00AC776F217FC3A700BC2358 /* DetailViewController.swift */,
+				003462E321A0D33700AB5C30 /* AddCatViewController.swift */,
+				003462E521A0D38200AB5C30 /* AddCatTableViewCell.swift */,
 				00AC776C217FB11D00BC2358 /* Models */,
 				00084E2F216186FB00D0826E /* Main.storyboard */,
 				00084E32216186FC00D0826E /* Assets.xcassets */,
@@ -276,10 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003462E621A0D38200AB5C30 /* AddCatTableViewCell.swift in Sources */,
 				00AC776A217FA7D300BC2358 /* CatTableViewCell.swift in Sources */,
 				00084E2E216186FB00D0826E /* ViewController.swift in Sources */,
 				00AC776E217FB15400BC2358 /* Cat.swift in Sources */,
 				00AC7770217FC3A700BC2358 /* DetailViewController.swift in Sources */,
+				003462E421A0D33700AB5C30 /* AddCatViewController.swift in Sources */,
 				00AC7768217FA70C00BC2358 /* CatTableViewController.swift in Sources */,
 				00084E2C216186FB00D0826E /* AppDelegate.swift in Sources */,
 			);
