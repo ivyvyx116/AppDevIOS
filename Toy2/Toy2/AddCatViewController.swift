@@ -86,6 +86,13 @@ class AddCatViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 } else {
                     cell.TextView.text = "Age " + age
                     cell.TextView.textColor = UIColor.black
+                    var ageRow : Int = -1
+                    if (age == "20+") {
+                        ageRow = 21
+                    } else {
+                        ageRow = Int(age) ?? -1
+                    }
+                    cell.PickerView.selectRow(ageRow, inComponent: 0, animated: false)
                 }
             } else {
                 cell.TextView.isHidden = true
@@ -93,6 +100,7 @@ class AddCatViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
         cell.addCatViewController = self
+
         return cell
     }
 
